@@ -1,0 +1,124 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": false,//取消导航栏
+					"bounce": "none"//取消回弹
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/workbench/workbench",
+			"style": {
+				"navigationBarTitleText": "工作台",
+				// "app-plus":{
+				// 	"titleNView":{
+				// 		// "type":"transparent",
+				// 		"buttons":[
+				// 			// {
+				// 			//     "text": "\ue62a",
+				// 			//     "fontSrc": "/static/iconfont/iconfont.ttf",
+				// 			//     "fontSize": "22px",
+				// 			// 	"float":"left"
+				// 			// },
+    //                         {
+    //                             "text": "\ue60d",
+    //                             "fontSrc": "/static/iconfont/iconfont.ttf",
+    //                             "fontSize": "22px",
+				// 				"float":"right"
+    //                         }
+    //                     ]
+				// 	}
+				// }
+				"app-plus": {
+					"titleNView": false,//取消导航栏
+					"bounce": "none"//取消回弹
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/message/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/tabBar/workcircle/workcircle",
+			"style": {
+				"navigationBarTitleText": "工作圈"
+			}
+		},
+		{
+			"path": "pages/tabBar/maillist/maillist",
+			"style": {
+				"navigationBarTitleText": "通讯录"
+			}
+		},
+		{
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path":"pages/Login/register",
+			"style":{
+				"navigationBarTitleText":"注册账号"
+			}
+		},
+		{
+			"path":"pages/Login/forgetpassword",
+			"style":{
+				"navigationBarTitleText":"重置密码"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white", //导航栏标题颜色
+		"navigationBarTitleText": "EbaoIMMS", //导航栏标题文字内容
+		"navigationBarBackgroundColor": "#4874AD",
+		"backgroundColor": "#4874AD"
+	}
+	,
+	"tabBar": { //底部导航栏配置
+		"color": "#333333",
+		"selectedColor": "#f06c7a",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/tabBar/message/message",
+				"iconPath": "static/img/tabBar/cart.png",
+				"selectedIconPath": "static/img/tabBar/home-on.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/tabBar/workcircle/workcircle",
+				"iconPath": "static/img/tabBar/category.png",
+				"selectedIconPath": "static/img/tabBar/home-on.png",
+				"text": "工作圈"
+			},
+			{
+				"pagePath": "pages/tabBar/workbench/workbench",
+				"iconPath": "static/img/tabBar/home.png",
+				"selectedIconPath": "static/img/tabBar/home-on.png",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/tabBar/maillist/maillist",
+				"iconPath": "static/img/tabBar/category.png",
+				"selectedIconPath": "static/img/tabBar/category-on.png",
+				"text": "通讯录"
+			},
+			{
+				"pagePath": "pages/tabBar/my/my",
+				"iconPath": "static/img/tabBar/user.png",
+				"selectedIconPath": "static/img/tabBar/user-on.png",
+				"text": "我的"
+			}
+
+		]
+	}
+}
